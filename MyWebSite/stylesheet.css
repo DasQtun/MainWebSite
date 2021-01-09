@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Audiowide', cursive;
+    background-image: url(images/BG.png);
+    background-size: cover;
+}
+/*
+   ROOT
+*/
+.root{
+    display:flex;
+    justify-content:center;
+}
+.coreBox {
+    margin-top: 1em;
+    width: 70%;
+    max-width: 940px;
+    outline: #483949 2px solid;
+    background-color: #2A272A;
+    
+}
+@media screen and (max-width:1110px){
+    .coreBox{
+        width:80%;
+        max-width: none;  
+    }
+}
+@media screen and (max-width:900px){
+    .coreBox{
+        width:100%;
+        max-width: none;
+        margin-top:0;
+        outline:none;
+        
+    }
+}
+/*
+   ROOT
+*/
+/*
+    HEADER
+*/
+.header {
+    width: 100%;  
+    height:auto;
+    position: sticky;
+    top:0;
+    background-color: #2A272A;
+    padding-bottom: 4px;
+}
+.logo{
+    text-align: center;
+    color:#FFF6FF;
+}
+/*
+    HEADER
+*/
+/*Navigation*/
+.desktopLinks {
+    display:block;
+    text-align:center;
+    font-size:0;
+}
+@media screen and (max-width:720px){
+    .desktopLinks{
+        display:none;
+    }
+}
+
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF6FF;
+    width: 7rem;
+    height: 2rem;
+    background-color:#4F4350;
+    position: relative;
+    padding: 0.50rem 1.50rem 0.25rem 1.50rem;
+    font-size: 1.25rem;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+
+    border:1px soild black;
+    border-radius: 5%;
+}
+
+.link:hover{
+    background-color: #483949;  
+}
+/*Navigation*/
+
+/*MobileNavigation*/
+.mobileNav{
+    display:none;
+       color:white;
+        font-size: 4rem;
+        float:right;
+        margin-right: 1rem;
+        cursor: pointer;
+}
+.mobileNavDiv{
+    display: none;
+}
+.mobileLink{
+    display: block;
+    text-decoration: none;
+    color: #FFF6FF;
+    height: 2rem;
+    background-color:#4F4350;
+    padding: 0.50rem 1.50rem 0.25rem 1.50rem;
+    font-size: 1.25rem;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+}
+.mobileLink:hover{
+    background-color: #483949;  
+}
+@media screen and (max-width:720px){
+    .mobileNav{
+        display:inline-block;
+     }
+    .logo{
+        display:inline-block;        
+    }
+    .header{
+        text-align:center;
+    }
+}
+/*MobileNavigation*/
+
+/*MAIN CONTENT*/
+.main-content{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    
+}
+@media screen and (max-width:720px){
+    .main-content{
+        background-color: #393639;
+    }
+   
+}
+.chunk{
+    margin: 0 10px 0 10px;
+    padding-top:1px;
+}
+.code{
+    color:#FABE67;
+   
+}
+/*MAIN CONTENT*/
